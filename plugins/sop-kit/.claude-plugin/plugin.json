@@ -1,0 +1,10 @@
+{
+  "name": "sop-kit",
+  "version": "0.2.0",
+  "description": "An agent that reads an SOP, loads the skills it needs, collects inputs from the user, and walks them through each step until it is done.",
+  "author": { "name": "sivadotblog", "url": "https://github.com/sivadotblog" },
+  "homepage": "https://github.com/sivadotblog/agentskills/tree/main/plugins/sop-kit",
+  "repository": "https://github.com/sivadotblog/agentskills",
+  "license": "MIT",
+  "keywords": ["sop", "runbook", "checklist"]
+}
