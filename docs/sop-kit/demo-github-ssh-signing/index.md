@@ -25,12 +25,12 @@ commits.
 
 ## Who did what
 
-| | Count | Examples |
-|---|---|---|
-| Agent did it | 9 of 16 steps | wrote `~/.ssh/config`, set git config, cloned, committed, pushed, ran every command-based Check |
-| Person did it | 6 of 16 steps | made the key, loaded it into the keychain, added it to GitHub twice, confirmed the Verified badge |
-| Skipped | 1 step | deleting the repo — this run used a real repo, not a throwaway one |
-| Approvals asked | 4 times | before writing `~/.ssh/config`, before changing global git config (3 steps), before pushing |
+|              | Count          | Examples                                                                                           |
+| ------------ | -------------- | --------------------------------------------------------------------------------------------------- |
+| Agent did it | 9 of 16 steps  | wrote `~/.ssh/config`, set git config, cloned, committed, pushed, ran every command-based Check     |
+| Person did it | 6 of 16 steps | made the key, loaded it into the keychain, added it to GitHub twice, confirmed the Verified badge   |
+| Skipped      | 1 step         | deleting the repo — this run used a real repo, not a throwaway one                                  |
+| Approvals asked | 4 times     | before writing `~/.ssh/config`, before changing global git config (3 steps), before pushing         |
 
 The passphrase for the SSH key was never typed into the chat at any point.
 
@@ -49,7 +49,7 @@ retrying blindly.
 
 ## Try it yourself
 
-```
+```text
 /plugin marketplace add sivadotblog/agentskills
 /plugin install sop-kit@sivadotblog
 /sop-kit:sop-new docs/sop-kit/demo-github-ssh-signing/1-runbook.md
