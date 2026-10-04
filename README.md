@@ -8,6 +8,8 @@ Agent skills and plugins by [sivadotblog](https://github.com/sivadotblog). Insta
 |---|---|
 | [sop-kit](plugins/sop-kit) | Walks people through SOPs and runbooks one step at a time, and turns docs into SOPs. |
 
+See it end to end: [demo — drafting a runbook, turning it into an SOP, and running it](docs/sop-kit/demo-github-ssh-signing/) (real transcript included).
+
 ## Install (Claude Code)
 
 Add this marketplace once:
