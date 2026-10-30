@@ -1,0 +1,11 @@
+# SkillSpector baseline — findings listed here are suppressed on future scans.
+# Reviewed false positives (see ../SKILLSPECTOR_REVIEW.md). Exact fingerprints:
+# any change to the file or a SkillSpector upgrade re-surfaces the finding.
+version: 2
+scanner_version: 2.12.0
+rules: []
+fingerprints:
+- hash: sha256:c13410829a43c4767332d29fce9abd59c9916c02ed7ee228c7e08babb255ee56
+  rule_id: EA2
+  file: SKILL.md
+  reason: 'False positive: line 14 is the "No secrets in chat" rule (never ask the user to type a sensitive value). It protects secrets and reduces autonomy.'
