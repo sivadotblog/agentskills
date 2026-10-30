@@ -1,0 +1,11 @@
+# SkillSpector baseline — findings listed here are suppressed on future scans.
+# Reviewed false positives (see ../SKILLSPECTOR_REVIEW.md). Exact fingerprints:
+# any change to the skill or a SkillSpector upgrade re-surfaces the finding.
+version: 2
+scanner_version: 2.12.0
+rules: []
+fingerprints:
+- hash: sha256:3aaf7883965793f066d573d6ffcbd9d8a95d5121900850727b7a5328f0a313d9
+  rule_id: EA2
+  file: SKILL.md
+  reason: 'False positive: line 118 says "Never ask the user to restate what they already said"; a question-phrasing rule, not a confirmation bypass.'

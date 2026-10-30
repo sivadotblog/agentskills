@@ -26,6 +26,12 @@ Overall: max score **28/100**, **MEDIUM**, recommendation **CAUTION** (below the
 
 **Verdict:** all 5 findings are false positives. There is no credential access, no data exfiltration and no unsafe autonomy. The skills are kept unchanged from upstream.
 
+## Resolution
+
+Each false positive is accepted in a SkillSpector baseline under [baselines/](baselines/), one file per flagged skill, with the reason recorded. The baselines use exact fingerprints rather than glob rules. If the skill text changes or SkillSpector is upgraded, the finding comes back for another review. Rewording upstream's skills just to silence the scanner would make updating from Spec Kit harder.
+
+With the baselines applied, every skill scores **0/100, SAFE, 0 new findings** (5 suppressed: checklist 1, implement 3, specify 1).
+
 ## Findings
 
 ### 1. PE3 Credential Access, HIGH: `speckit-implement/SKILL.md:119` (`.npmrc`)
@@ -60,5 +66,10 @@ Overall: max score **28/100**, **MEDIUM**, recommendation **CAUTION** (below the
 ## Re-run
 ```
 uv tool install git+https://github.com/NVIDIA/skillspector.git
+plugins/speckit/review/scan.sh   # per-skill scan with baselines; exits 1 on any new finding
+```
+SkillSpector refuses `--baseline` on recursive multi-skill scans, so `scan.sh` scans each skill on its own. To regenerate the unsuppressed full report:
+```
 skillspector scan plugins/speckit/skills --recursive --no-llm --format markdown --output plugins/speckit/review/skillspector-report.md
 ```
+After updating the skills from Spec Kit, re-review any finding that comes back, then regenerate that skill's baseline with `skillspector baseline plugins/speckit/skills/<skill> --no-llm -o plugins/speckit/review/baselines/<skill>.yaml` and write the reasons again.
