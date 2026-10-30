@@ -7,6 +7,7 @@ Agent skills and plugins by [sivadotblog](https://github.com/sivadotblog). Insta
 | Plugin                     | What it does                                                                         |
 | --------------------------- | ------------------------------------------------------------------------------------- |
 | [sop-kit](plugins/sop-kit) | Walks people through SOPs and runbooks one step at a time, and turns docs into SOPs. |
+| [speckit](plugins/speckit) | GitHub Spec Kit's spec-driven development skills, security-reviewed with NVIDIA SkillSpector. |
 
 See it end to end: [demo — drafting a runbook, turning it into an SOP, and running it](docs/sop-kit/demo-github-ssh-signing/) (real transcript included).
 

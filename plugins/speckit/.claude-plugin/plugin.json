@@ -1,0 +1,10 @@
+{
+  "name": "speckit",
+  "version": "0.1.0",
+  "description": "GitHub Spec Kit's spec-driven development skills (constitution, specify, clarify, plan, tasks, analyze, checklist, implement, converge, taskstoissues), security-reviewed with NVIDIA SkillSpector.",
+  "author": { "name": "sivadotblog", "url": "https://github.com/sivadotblog" },
+  "homepage": "https://github.com/sivadotblog/agentskills/tree/main/plugins/speckit",
+  "repository": "https://github.com/sivadotblog/agentskills",
+  "license": "MIT",
+  "keywords": ["spec-kit", "spec-driven-development", "planning", "specification"]
+}
