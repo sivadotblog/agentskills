@@ -1,0 +1,11 @@
+# SkillSpector baseline — findings listed here are suppressed on future scans.
+# Reviewed false positives (see ../SKILLSPECTOR_REVIEW.md). Exact fingerprints:
+# any change to the skill or a SkillSpector upgrade re-surfaces the finding.
+version: 2
+scanner_version: 2.12.0
+rules: []
+fingerprints:
+- hash: sha256:59c3958297b2dcf540913c24c74956bd72fea5219cf00ecdcabcf2e319f8077b
+  rule_id: EA2
+  file: SKILL.md
+  reason: 'False positive: line 60 says "Do not ask the user to repeat" the feature description; no high-impact action is taken.'

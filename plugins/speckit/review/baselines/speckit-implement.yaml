@@ -1,0 +1,19 @@
+# SkillSpector baseline — findings listed here are suppressed on future scans.
+# Reviewed false positives (see ../SKILLSPECTOR_REVIEW.md). Exact fingerprints:
+# any change to the skill or a SkillSpector upgrade re-surfaces the finding.
+version: 2
+scanner_version: 2.12.0
+rules: []
+fingerprints:
+- hash: sha256:e7522465fe275ef56118983c1da16cddf10c79d7225c0c2b2d4ae472742f3837
+  rule_id: PE3
+  file: SKILL.md
+  reason: 'False positive: line 147 lists kubeconfig* as a pattern to ADD to ignore files; it never reads kubeconfig.'
+- hash: sha256:fa201cf44cf77c3d8edd002dc46117bc899991b7a0ac3bfed8f40974d1a14283
+  rule_id: PE3
+  file: SKILL.md
+  reason: 'False positive: line 119 only checks whether .npmrc exists to decide on .npmignore; it never reads the file.'
+- hash: sha256:8f68983702f49b9d9126a9e4d4ddb1f953f7e5fa8b20f6425f5ef54d39584f7f
+  rule_id: PE3
+  file: SKILL.md
+  reason: 'False positive: line 147 lists *.secret.yaml as a pattern to ADD to ignore files; it never reads secrets.'

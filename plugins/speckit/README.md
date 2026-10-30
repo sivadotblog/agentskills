@@ -33,11 +33,11 @@ uvx --from git+https://github.com/github/spec-kit.git specify init --here --inte
 ```
 
 ## Security review
-Scanned with SkillSpector (static mode). Max risk score 28/100 (MEDIUM, "CAUTION"). We reviewed all 5 findings and found them to be false positives. Details: [review/SKILLSPECTOR_REVIEW.md](review/SKILLSPECTOR_REVIEW.md).
+Scanned with SkillSpector (static mode). Max risk score 28/100 (MEDIUM, "CAUTION"). We reviewed all 5 findings and found them to be false positives. They are accepted in reviewed baselines, so with those applied every skill scores 0/100. Details: [review/SKILLSPECTOR_REVIEW.md](review/SKILLSPECTOR_REVIEW.md).
 
 ## Contents
 - `skills/speckit-*/`: the 10 skills, copied unchanged from Spec Kit
-- `review/`: the SkillSpector review and the full scan report
+- `review/`: the SkillSpector review, the full scan report, reviewed baselines, and `scan.sh` to re-run it
 - `LICENSE-spec-kit`: Spec Kit's MIT license (the skills are © GitHub, Inc.)
 
 ## Source
