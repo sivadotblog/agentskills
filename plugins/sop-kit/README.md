@@ -33,7 +33,11 @@ No Python or extra installs. Just Claude Code.
 - `skills/sop-runner/`: how to run an SOP, and the SOP format (the knowledge)
 - `skills/sop-author/`: how to write an SOP from a runbook
 - `templates/sop-template.md`: blank SOP
+- `review/`: NVIDIA SkillSpector security review, reviewed baselines, and `scan.sh` to re-run it
 - `examples/`: sample SOP
+
+## Security review
+Scanned with [NVIDIA SkillSpector](https://github.com/NVIDIA/skillspector) (static mode): 38/100, "CAUTION". All 3 findings are false positives, accepted in reviewed baselines; with those applied every part scores 0/100. A manual review found 2 design risks the scanner doesn't flag (agent steps without approval by default, unquoted inputs in commands). Details: [review/SKILLSPECTOR_REVIEW.md](review/SKILLSPECTOR_REVIEW.md).
 
 ## Notes
 - Use `/sop-run`. It runs the agent in your main conversation so it can ask you questions. If Claude hands the SOP off to the agent in the background instead, it cannot wait for your answers.

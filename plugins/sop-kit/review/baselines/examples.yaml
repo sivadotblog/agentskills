@@ -1,0 +1,15 @@
+# SkillSpector baseline — findings listed here are suppressed on future scans.
+# Reviewed false positives (see ../SKILLSPECTOR_REVIEW.md). Exact fingerprints:
+# any change to the file or a SkillSpector upgrade re-surfaces the finding.
+version: 2
+scanner_version: 2.12.0
+rules: []
+fingerprints:
+- hash: sha256:8805bc3315bd2eb8de729da8093c421c7a40e4e50fc22241543fe141a25cd552
+  rule_id: E2
+  file: prefect-databricks-connection.md
+  reason: 'False positive: example SOP text about a secret stored in Key Vault (line 14 input description; line 31 Check that reads only the secret id, never its value). No environment variables are read.'
+- hash: sha256:85d5e2c26f2b7d864e76f2cdbb20839e334cff83fd2369291ed7cc02ac0c6c9f
+  rule_id: E2
+  file: prefect-databricks-connection.md
+  reason: 'False positive: example SOP text about a secret stored in Key Vault (line 14 input description; line 31 Check that reads only the secret id, never its value). No environment variables are read.'

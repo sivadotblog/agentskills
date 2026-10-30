@@ -7,7 +7,7 @@
       "name": "sop-kit",
       "source": "./plugins/sop-kit",
       "description": "SOP runner agent and SOP author: walks people through runbooks step by step.",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "category": "productivity",
       "keywords": ["sop", "runbook", "checklist"]
     }
