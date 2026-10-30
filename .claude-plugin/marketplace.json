@@ -10,6 +10,14 @@
       "version": "0.2.0",
       "category": "productivity",
       "keywords": ["sop", "runbook", "checklist"]
+    },
+    {
+      "name": "speckit",
+      "source": "./plugins/speckit",
+      "description": "GitHub Spec Kit's spec-driven development skills, security-reviewed with NVIDIA SkillSpector.",
+      "version": "0.1.0",
+      "category": "development",
+      "keywords": ["spec-kit", "spec-driven-development", "planning"]
     }
   ]
 }
